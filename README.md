@@ -1,2 +1,3 @@
 # Iti-Validator.github.io
-A website for our short paper Iti-Validator: A Guardrail Framework for Validating and Correcting LLM-Generated Itineraries accepted at ACM SIGSPATIAL 2025. A longer version has also been written and made available for those who are interested.
+
+This repository hosts a simple, professional GitHub Pages site for the research project and paper accepted at ACM SIGSPATIAL 2025 "Iti-Validator: A Guardrail Framework for Validating and Correcting LLM-Generated Itineraries" with links to the short paper, long paper, and the code repository.

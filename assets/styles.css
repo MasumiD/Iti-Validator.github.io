@@ -1,0 +1,167 @@
+:root {
+  --bg: #0b0c10;
+  --card: #111217;
+  --muted: #8b90a1;
+  --text: #e6e8ef;
+  --brand: #5aa9e6;
+  --brand-strong: #4a97d3;
+  --border: #1c1e26;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 10% 0%, #12131a 0%, var(--bg) 60%), var(--bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-header {
+  padding: 56px 0 24px;
+  border-bottom: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+}
+
+.paper-title {
+  margin: 0 0 8px;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.paper-subtitle {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+.authors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 28px;
+}
+
+.author {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--muted);
+}
+
+.author .name {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.hero {
+  padding: 28px 0 8px;
+}
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.cta {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 120ms ease, background 200ms ease, border-color 200ms ease;
+}
+
+.cta:hover {
+  transform: translateY(-1px);
+  border-color: #2a2d38;
+}
+
+.cta.muted {
+  color: var(--muted);
+}
+
+.cta.outlined {
+  border-color: var(--border);
+}
+
+.abstract, .bib, .code, .ack {
+  padding: 18px 0;
+}
+
+h2 {
+  margin: 24px 0 12px;
+  font-size: 22px;
+}
+
+.bibtex {
+  background: #0e0f14;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  overflow: auto;
+}
+
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links-list a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.links-list a:hover {
+  color: var(--brand-strong);
+}
+
+.note {
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+.site-footer {
+  margin: 24px 0 48px;
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  color: var(--muted);
+}
+
+.affiliation a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.affiliation a:hover {
+  color: var(--brand);
+  text-decoration: underline;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+@media (max-width: 720px) {
+  .paper-title { font-size: 32px; }
+  .cta-grid { grid-template-columns: 1fr; }
+}
+
+
